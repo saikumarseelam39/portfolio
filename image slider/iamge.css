@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+   
+}
+.image{
+    display: flex;
+    width: 100px;
+    height: 300px;
+    gap: 10px;
+    border-radius: 50px;
+    background-image: url(images/game\ of\ thrones.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    transition:width 0.5s;
+}
+.image h5{
+    display: inline;
+    position: absolute;
+    opacity: 0;
+    color: white;
+}
+.image:nth-child(1){
+    background-image: url(images/naruto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image:nth-child(2){
+    background-image: url(images/onepiece.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image:nth-child(3){
+    background-image: url(images/pokemon.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image:nth-child(4){
+    background-image: url(images/game\ of\ thrones.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image:hover{
+    width: 300px;
+}
+.image :hover h5{
+    opacity: 100;
+}
